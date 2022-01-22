@@ -64,7 +64,7 @@ j) fractal dimension ("coastline approximation" - 1)
     - Plot box, violin and histogram plots to check all the numerical features (Distributions and Outliers)
   
 <p align="center">
-<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/1.jpg"/>
 </p>
   
   - **Data preparation and preprocessing:**
@@ -84,58 +84,63 @@ j) fractal dimension ("coastline approximation" - 1)
 ### Logistic Regression
  
 <p align="center">
-<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/2.png"/>
 </p>
  
 ### Decision Tree
 
 <p align="center">
-<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/3.pgn"/>
 </p>
 
 ### Random Forest
 
 <p align="center">
-<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/4.png"/>
 </p>
 
 ### Support Vector Machine (SVM)
 
 <p align="center">
-<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/5.png"/>
 </p>
 
 ### K - Nearest Neighbors (KNN)
 
 <p align="center">
-<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/6.png"/>
 </p>
 
 ### XGBoost 
 
 <p align="center">
-<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/7.png"/>
 </p>
 
   - **Evaluation and comparision of all the models:**
     - The best predictive model is XGBoost, that's why we are going to continue working just with this one.
+ 
+<p align="center">
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/8.png"/>
+</p> 
+ 
     - SHAP: This tool decomposes a model prediction such that it’s a linear sum of individual contributions of features (additive feature attribution techniques). This give us the capacity to "understand" how the model is working, which allows us to draw conclusions.
 
 ### Global Interpretation - Feature Importance Globally
 
 <p align="center">
-<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/9.png"/>
 </p>
 
 ### Local Interpretations
 
 <p align="center">
-<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/10.png"/>
 </p>
 
 ### Partial Dependence 
 This one is not really usefull because the features data have been transform.
 
 <p align="center">
-<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/11.jpg"/>
 </p>
