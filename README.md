@@ -58,36 +58,84 @@ j) fractal dimension ("coastline approximation" - 1)
 
   - **Data Understanding:** 
     - Check the type of values of each column and shape of the DataFrame 
-    - Check if the df has NaN values
-    - Plot histograms to check all the numerical features (Distributions and Outliers)
-    - Check the number of categories per categorical feature and take a closer look at features with many categories
+    - Inspect the target variable
+    - Identify the unique number of values
+    - Check if the df has NaN values and rows with missing values
+    - Plot box, violin and histogram plots to check all the numerical features (Distributions and Outliers)
+  
+<p align="center">
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+</p>
   
   - **Data preparation and preprocessing:**
-    - Drop "duration" feaure (Explained in the notebook)
+    - Drop some feaures (Explained in the notebook)
     - Define X and Y
     - Split the data into train and test data: train_test_split (sklearn.model_selection)
-    - Split numerical and categorical features
-    - Pipeline: we created pipelines for both the categorical (incl. OneHotEncoder) and the numeric data (incl. StandardScaler) as well as a preprocessor (ColumnTransformer) to combine these two pipelines
     
-  - **Superviced Machine Learning Algorithm:**
+  - **Superviced Machine Learning Algorithms:**
     - Compare several models, just to check how each of them works.
-      - Logistic Regression: Cross validaion with No Penaly, L1 (Lasso) and L2 (Ridge).
-      - KNN (K-Nearest Neighbour)
-      - Naive Bayes
-      - SVM
-      - Random Forest
-      - AdaBoost
-      - XGBoost
-      
-    Surprisingly the best scoring model was Logistic Regression, and one of the main reasons could be because it was the only one to which Hyperparameter Tuning was applied.
-    
-    - Feature Importance: 
-    
-    Trees based models like RandomForest, XGBoost, etc. provide us feature importance based on the training. A very relevant aspect if you want to know more about how each of the features affects.
+    - To check them, the main steps have been:
+        - Pipeline building
+        - Cross validation with default hyperparameters
+        - Hyperparameter tuning
+        - Cross validation with the best hyperparameters
+        - Confusion matrix display
+ 
+### Logistic Regression
+ 
+<p align="center">
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+</p>
+ 
+### Decision Tree
 
----
+<p align="center">
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+</p>
 
-### Future steps:
-- Hyperparameter Tuning
-- Feature Interpretation (SHAP)
-- Provide a conclusion based on what has been learned, about this business problem.
+### Random Forest
+
+<p align="center">
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+</p>
+
+### Support Vector Machine (SVM)
+
+<p align="center">
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+</p>
+
+### K - Nearest Neighbors (KNN)
+
+<p align="center">
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+</p>
+
+### XGBoost 
+
+<p align="center">
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+</p>
+
+  - **Evaluation and comparision of all the models:**
+    - The best predictive model is XGBoost, that's why we are going to continue working just with this one.
+    - SHAP: This tool decomposes a model prediction such that it’s a linear sum of individual contributions of features (additive feature attribution techniques). This give us the capacity to "understand" how the model is working, which allows us to draw conclusions.
+
+### Global Interpretation - Feature Importance Globally
+
+<p align="center">
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+</p>
+
+### Local Interpretations
+
+<p align="center">
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+</p>
+
+### Partial Dependence 
+This one is not really usefull because the features data have been transform.
+
+<p align="center">
+<image src="https://github.com/wanaguirre/Breast-Cancer-Prediction/blob/main/Notebooks/images/radius_relation_example.jpg"/>
+</p>
