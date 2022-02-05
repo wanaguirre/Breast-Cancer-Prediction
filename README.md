@@ -1,4 +1,4 @@
-This repository is just to show and teach some of the Supervised ML models used to solve Classification problems.
+This repository is just to show and teach some of Supervised ML models used to solve Classification problems.
 
 # Breast-Cancer-Prediction
 
